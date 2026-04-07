@@ -1,6 +1,3 @@
-# Program to copy contents of one text file to another
-
-
 source_file = "source.txt"
 destination_file = "destination.txt"
 
