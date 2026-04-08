@@ -1,0 +1,36 @@
+# Consider a student table with following columns for all database related programs (rollno, name, gender, age, email, mobile, city).
+
+import mysql.connector
+
+con = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",      
+    database="studentdb"
+)
+
+cur = con.cursor()
+
+
+'''CREATE DATABASE studentdb;
+
+USE studentdb;
+
+CREATE TABLE student (
+    rollno INT PRIMARY KEY,
+    name VARCHAR(50),
+    gender VARCHAR(10),
+    age INT,
+    email VARCHAR(100),
+    mobile VARCHAR(15),
+    city VARCHAR(50)
+);'''
+
+'''
+INSERT INTO student (rollno, name, gender, age, email, mobile, city) VALUES
+(1, 'Neha', 'Female', 21, 'neha@gmail.com', '9876543210', 'Rajkot'),
+(2, 'Nishit', 'Male', 22, 'nishit@yahoo.com', '9876501234', 'Ahmedabad'),
+(3, 'Nami', 'Femaleale', 20, 'nami123@gmail.com', '9988776655', 'Surat'),
+(4, 'Ravi', 'Male', 23, 'raviexample.com', '9123456780', 'Baroda'),
+(5, 'Naina', 'Female', 21, 'naina@mail.com', '9090909090', 'Rajkot');
+'''
